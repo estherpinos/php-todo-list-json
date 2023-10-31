@@ -25,42 +25,20 @@
 <body>
 
   <div id="app" class="container">
-    <div class="logo">
-        <img src="img/Immagine WhatsApp 2023-09-29 ore 14.18.57_cdbcaac4.jpg" alt="">
-    </div>
+    <div class="container">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="">
+      </div>
 
-    <div class="new-task">
-        <input 
-        v-model="newTask" 
-        type="text" 
-        placeholder="Nuova task" 
-        @keyup.enter="addTask"
-        >
-        <button @click="addTask">Aggiungi</button>
-        <p 
-        v-if="isError" 
-        class="error">
-        il nuovo caractere deve al meno avere 5 caratteri</p>
-       
-
-    </div>
-
-    <div class="task-container">
-      <ul v-if="tasks.length > 0">
-          <li v-for="(task, index) in tasks">
-              <span @click="underline(task)" :class="{'underlined': task.done}">{{ task.text }}</span>
-              <i @click="removeTask(task, index)" class="fa-solid fa-trash"></i>
+      <div class="task-container">
+        <ul>
+          <li v-for="(item,index) in list" :key="index">
+            {{item.text}}
           </li>
-         
-      </ul>
-      <h3 v-else>Non ci sono task</h3>
-      <p 
-      v-if="selectFirst" class="text-center text-danger  " >
-     Prima devi selezionare come fatta la cosa da fare</p>
-
+        </ul>
+      </div>
+    </div>
   </div>
-
-</div>
 
 
 
