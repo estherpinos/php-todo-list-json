@@ -1,0 +1,15 @@
+
+  [
+    {
+        "text": "fare la spesa",
+        "done": true
+    },
+    {
+        "text": "studiare vue",
+        "done": false
+    },
+    {
+        "text": "fare la pasta",
+        "done": false
+  }
+]
