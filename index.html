@@ -30,6 +30,14 @@
         <img src="img/logo.jpg" alt="">
       </div>
 
+      <div class=" text-center ">
+        <form class="border-1 " method="post" action="add.php">
+          <input type="text" name="new_thing" placeholder="New thing" required>
+          <button class=" border-1" type="submit">Go</button>
+      </form>
+  
+      </div>
+
       <div class="task-container">
         <ul>
           <li v-for="(item,index) in list" :key="index">

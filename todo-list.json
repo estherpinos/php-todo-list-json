@@ -1,15 +1,26 @@
-
-  [
+[
     {
-        "text": "fare la spesa",
+        "text": "Lavare la macchina",
         "done": true
     },
     {
-        "text": "studiare vue",
+        "text": "Studiare vue",
         "done": false
     },
     {
-        "text": "fare la pasta",
+        "text": "Fare la pasta",
+        "done": false
+    },
+    {
+        "text": "Pulire la casa",
+        "done": false
+    },
+    {
+        "text": "Fare la insalata",
+        "done": false
+    },
+    {
+        "text": "ciao",
         "done": false
     }
 ]
